@@ -8,15 +8,6 @@
   }
 </style>
 <script>
-  // Mediasniper lib
-  let lib = document.createElement("script");
-  lib.src = "https://static.terratraf.com/engine/ssp/hb.js";
-  document.head.appendChild(lib);
-  // Astralab lib
-  let libAstralab = document.createElement("script");
-  libAstralab.src = "https://cdn.al-adtech.com/ssp/sync-urls.js";
-  document.head.appendChild(libAstralab);
-
   console.log("GPM_NTV_M_AIR_320x100");
   window.MTT.wrapper({
     adfox: {
