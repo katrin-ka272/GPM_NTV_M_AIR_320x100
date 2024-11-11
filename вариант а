@@ -1,0 +1,53 @@
+<!-- variant a 320x100-->
+<div id="GPM_NTV_M_AIR_320x100"></div>
+<style>
+  #GPM_NTV_M_AIR_320x100 {
+    margin: 0 auto;
+    max-width: 320px;
+    max-height: 100px;
+  }
+</style>
+<script>
+  // Mediasniper lib
+  let lib = document.createElement("script");
+  lib.src = "https://static.terratraf.com/engine/ssp/hb.js";
+  document.head.appendChild(lib);
+  // Astralab lib
+  let libAstralab = document.createElement("script");
+  libAstralab.src = "https://cdn.al-adtech.com/ssp/sync-urls.js";
+  document.head.appendChild(libAstralab);
+
+  console.log("GPM_NTV_M_AIR_320x100");
+  window.MTT.wrapper({
+    adfox: {
+      ownerId: 277740,
+      params: {
+        p1: "devns",
+        p2: "gdwh",
+      },
+    },
+    adfoxHeaderBidding: {
+      units: [
+        {
+          sizes: [[320, 100]],
+          bids: [
+            { bidder: "myTarget", params: { placementId: "1718076" } },
+            { bidder: "betweenDigital", params: { placementId: "4807122" } },
+            { bidder: "adriver", params: { placementId: "40:GPM_NTV.ru_M_AIR_320x100" } },
+            { bidder: "getintent", params: { placementId: "215_GPM_NTV.ru_M_AIR_320x100" } },
+            { bidder: "buzzoola", params: { placementId: "1280637" } },
+            { bidder: "mediasniper", params: { placementId: "18952" } },
+            { bidder: "astralab", params: { placementId: "6731fbff6ac583f80e728e3f" } },
+          ],
+        },
+      ],
+    },
+    banner: {
+      refresh: {
+        checkVisibility: true,
+        seconds: 30,
+      },
+    },
+    containerId: "GPM_NTV_M_AIR_320x100",
+  });
+</script>
